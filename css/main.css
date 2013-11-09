@@ -1,0 +1,168 @@
+*{
+	font-family: Helvetica !important;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	color: black;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+#container{
+	width: 100%;
+/*	padding: 5px;*/
+	text-align: center;
+/*	border: 1px solid blue;*/
+}
+
+.clear{
+	clear: both;
+}
+
+.leftAlign{
+	text-align: left;
+}
+
+.rightAlign{
+	text-align: right;
+}
+
+.main{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#header{
+/*	border: 1px solid red;*/
+	text-align: center;
+}
+
+#headerImage{
+	width: 300px;
+	/*float: left;*/
+	display: inline-block;
+}
+
+#headerImage img{
+	 height:80px;
+}
+
+#headerText{
+	width: 100px;
+	/*float: left;*/
+	display: inline-block;
+}
+
+#headerButtonsContainer{
+	width: 100px;
+	display: inline-block;
+}
+
+#content{
+	/*border: 1px solid red;*/
+}
+
+#footer{
+	/*border: 1px solid red;*/
+}
+
+.column{
+	padding-top: 10px;
+	width: 300px;
+	margin: 20px 10px;
+}
+
+#bottomFormText{
+	display: inline-block;
+	height: auto;
+	border: none;
+}
+
+.signUpForm{
+	width: 200px;
+	height: 20px;
+	border: 2px solid gray;
+	padding: 5px;
+	margin: 10px 2px;
+	font-size: 10pt;
+}
+
+.signUpForm[type=submit]{
+	border: none;
+}
+
+.signUpButton{
+	background-color: rgb(231, 76, 60);
+	color: white;
+}
+
+.button{
+	height: 32px;
+	width: 214px;
+}
+
+#logos img{
+	width: 60px;
+	margin-right: 10px;
+}
+
+#footer img{
+	width: 40px;
+	margin-right: 10px;
+}
+
+#leftColumn{
+	float: left;
+	border: none;
+}
+
+#central{
+	float: left;
+	margin-top: 20px;
+	width: 570px;
+}
+
+#rightColumn{
+	width: 150px;
+	float: right;
+	margin-right: 0;
+}
+
+#howItWorks{
+	text-align:left;
+	position:relative;
+	background-color:rgb(51,51,51);
+	color:white;
+	padding:5px;
+	width: 150px;
+	top:-28px;
+}
+
+#feedback{
+	margin-top:100px;
+	margin-right:0;
+	text-align:right;
+	background-color:blue;
+	color:white;
+	margin-left:50px;
+	padding:10px 5px;
+}
+
+#centralImage{
+	width: 100%;
+	height: 300px;
+	min-height:300px;
+	background-color: blue;
+}
+
+#centralImage img{
+	height: 250px;
+}
