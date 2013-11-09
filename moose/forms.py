@@ -10,10 +10,10 @@ from django.db import connection
 from django.forms.util import ErrorList # validation error reports
 
 
-class Login(forms.Form):
+class LoginForm(forms.Form):
 
-    name = forms.CharField(required=True)
     email = forms.EmailField(required=True)
+    password = forms.CharField( widget=forms.PasswordInput(render_value=True), required=True )
     
 
 
