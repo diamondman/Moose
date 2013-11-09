@@ -5,7 +5,7 @@ admin.autodiscover()
 
 from django.views.generic import TemplateView
 
-from moose.views import *
+from Moose.moose.views import *
 
 urlpatterns = patterns('',
     # Examples:
