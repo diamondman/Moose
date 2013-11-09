@@ -1,0 +1,39 @@
+{
+	"deals":[
+		{
+			"id": 4,
+			"image": "../images/dealTest.png",
+			"description": "there are four things that I think I need",
+			"favorite": true,
+			"new": false
+		},
+		{
+			"id": 5,
+			"image": "../images/dealTest.png",
+			"description": "take an ID and, based on a direction",
+			"favorite": true,
+			"new": false
+		},
+		{
+			"id": 6,
+			"image": "../images/dealTest.png",
+			"description": "return the deals older or newer than that id",
+			"favorite": false,
+			"new": false
+		},
+		{
+			"id": 7,
+			"image": "../images/dealTest.png",
+			"description": "also I would like to specify the order, based on the IDs",
+			"favorite": false,
+			"new": false
+		},
+		{
+			"id": 8,
+			"image": "../images/dealTest.png",
+			"description": "I think that's it for now",
+			"favorite": true,
+			"new": false
+		}
+	]
+}
