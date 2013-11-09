@@ -5,7 +5,7 @@ from django.views.decorators.cache import cache_page #CACHE imports
 #from vBVS.FrontEnd.models import Run,Resource,Runplan,Buildsready
 #from vBVS.FrontEnd.models import Baselineinfo,User,Notification,Notificationlist
 from django.shortcuts import render_to_response
-from Moose.moose..forms import *
+#from Moose.moose.forms import *
 from django.db import connection, transaction
 import string,math
 import re
@@ -28,7 +28,7 @@ def test1(request, *args, **kwargs):
                         , status=200)
 
 def get_deals(request):
-    f = open('/opt/Moose/static/deals_sample.json')
+    f = open('/opt/Moose/moose/templates/deals_sample.json')
     l = f.readlines()
     f.close()
     return HttpResponse("".join(l), mimetype='application/json', status=200)

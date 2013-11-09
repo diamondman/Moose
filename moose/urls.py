@@ -10,6 +10,6 @@ urlpatterns = patterns('',
     # url(r'^$', 'moose.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
     url(r'^&', 'login'),url(r'test', test1),
-    url(r'^get_deals', 'get_deals'),
+    url(r'^get_deals', 'moose.views.get_deals'),
     url(r'^admin/', include(admin.site.urls)),
 )
