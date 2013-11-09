@@ -30,8 +30,17 @@
             				<img src="static/images/outlook_logo.png" />
             			</div>
             			<h3>or</h3>
-	            		<form name="signup" id="signUpForm" method="post" action="signup.php">
+	            		<form name="signup" id="signUpForm" method="post" action="login/login.html">
+					{% if form.errors %}
+						<font color="red"><p>Please correct errors loging in</p></font>
+					{% endif%}
+					{% if form.errors.email %}
+						<font color="red">enter valis email</font>
+					{% endif%}
 					{{form.email}}<br>
+					{% if form.errors.password %}
+						<font color="red">incorrect password</font>
+					{% endif%}
 					{{form.password}}
 	            			<input type="submit" name="test" value="Sign up" class="signUpForm button signUpButton" />
 	            		</form>

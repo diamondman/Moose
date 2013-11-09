@@ -10,11 +10,15 @@ from django.db import connection, transaction
 import string,math
 import re
 
-def login(request, *args, **kwargs):
+def _isValidEmail(request):
+    return True
+
+def login(request):
     if request.method == 'POST':
         form = BaselineinfoForm(request.POST)
         if form.is_valid():
-            return HttpResponseRedirect("deals.html")
+            if _isValidEmail(request)
+            return HttpResponseRedirect("deals/deals.html")
     else:
         form = LoginForm()
     
