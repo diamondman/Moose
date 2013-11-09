@@ -17,8 +17,8 @@ def login(request):
     if request.method == 'POST':
         form = BaselineinfoForm(request.POST)
         if form.is_valid():
-            if _isValidEmail(request)
-            return HttpResponseRedirect("deals/deals.html")
+            if _isValidEmail(request):
+                return HttpResponseRedirect("deals/deals.html")
     else:
         form = LoginForm()
     
