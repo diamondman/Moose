@@ -59,4 +59,4 @@ def fav_json(request):
 def set_favorite(request, id, value):
     fav = Favorite(email=id, isFavorite=(True if value.lower() == 'true' else False))
     fav.save()
-    return HttpResponse(s(str(email))
+    return HttpResponse(str(email))
