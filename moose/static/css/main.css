@@ -173,7 +173,7 @@ a:hover{
 #rightColumn{
 	float: right;
 	margin-right: 0;
-	width: 100px;
+	width: 70px;
 }
 
 #rightColumn #feedback{
@@ -182,7 +182,7 @@ a:hover{
 	text-align:right;
 	background-color:blue;
 	color:white;
-	padding:10px 5px;
+	padding:5px 5px;
 	
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
