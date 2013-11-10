@@ -89,6 +89,8 @@ function insertDeal(destinationBox,deal,position) {
 	with(DOMBuilder.dom) {
 		var elementToAdd = 
 			DIV({'class':'item' + (deal.new?' newItem':'')},
+			A({'href':deal.link},
+			
 				IMG({'src': deal.image}),
 				DIV({'class':'descriptionBox'}, deal.description),
 				DIV(
@@ -96,7 +98,7 @@ function insertDeal(destinationBox,deal,position) {
 					DIV({'class':'imageBox'}, A({'id':'favoriteDeal'+deal.id,'href':"javascript:flagFavorite("+deal.id+",'"+nextFavTrigger+"');"},IMG({'src':deal.favorite?'../static/images/heart_red.png':'../static/images/heart_gray.png'}))),
 					DIV({'class':'clear'})
 				)
-			);
+			));
 	}
 	
 					  	

@@ -3,6 +3,7 @@
 		{
 			"id": 4,
 			"image": "../static/images/tiles/deal_2b.jpg",
+			"link": "http://www.amazon.com",
 			"description": "there are four things that I think I need",
 			"favorite": true,
 			"new": false,
@@ -11,6 +12,7 @@
 		{
 			"id": 5,
 			"image": "../static/images/tiles/deal_2b.jpg",
+			"link": "http://www.amazon.com",
 			"description": "take an ID and, based on a direction",
 			"favorite": true,
 			"new": false,
@@ -19,6 +21,7 @@
 		{
 			"id": 6,
 			"image": "../static/images/tiles/deal_2b.jpg",
+			"link": "http://www.amazon.com",
 			"description": "return the deals older or newer than that id",
 			"favorite": false,
 			"new": false,
@@ -27,6 +30,7 @@
 		{
 			"id": 7,
 			"image": "../static/images/tiles/deal_2b.jpg",
+			"link": "http://www.amazon.com",
 			"description": "also I would like to specify the order, based on the IDs",
 			"favorite": false,
 			"new": true,
@@ -35,6 +39,7 @@
 		{
 			"id": 8,
 			"image": "../static/images/tiles/deal_2b.jpg",
+			"link": "http://www.amazon.com",
 			"description": "I think that's it for now",
 			"favorite": true,
 			"new": true,
