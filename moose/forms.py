@@ -12,7 +12,7 @@ from django.forms.util import ErrorList # validation error reports
 
 class LoginForm(forms.Form):
 
-    email = forms.EmailField(required=True)
+    name = forms.CharField(required=True)
     password = forms.CharField( widget=forms.PasswordInput(render_value=True), required=True )
     
 class NewUserForm(forms.Form):

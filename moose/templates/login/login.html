@@ -21,8 +21,7 @@
             	</div>
             	<div class="clear"></div>
             	<div id="headerButtonsContainer2" class="rightAlign">
-            			<button name="login" value="Log in" class="logInButton">Log in</button>
-				<button name="login" value="Sign up" class="logInButton" style="margin-right:100px;" onclick="javascript:location.href='../new_user'">Sign up</button>
+            			<button name="login" value="Log in" class="logInButton">Log in</button> <button name="login" value="Sign up" class="logInButton" style="margin-right:100px;">Sign up</button>
             	</div>
             </div>
             <div id="content" class="main">
@@ -39,10 +38,10 @@
 					{% if form.errors %}
 						<font color="red"><p>Please correct errors logging in</p></font>
 					{% endif%}
-					{% if form.errors.email %}
+					{% if form.errors.name %}
 						<font color="red">enter valid email</font>
 					{% endif%}
-					{{form.email}}<br>
+					{{form.name}}<br>
 					{% if form.errors.password %}
 						<font color="red">incorrect password</font>
 					{% endif%}
