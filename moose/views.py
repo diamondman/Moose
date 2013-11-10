@@ -27,6 +27,13 @@ def test1(request, *args, **kwargs):
                             (args, kwargs, type(request.session))
                         , status=200)
 
+def home(request, *args, **kwargs):
+    import ipdb
+    #ipdb.set_trace()
+    return HttpResponse("args: %s, kwargs: %s, session: %s"%\
+                            (args, kwargs, type(request.session))
+                        , status=200)
+
 def get_deals(request):
     f = open('/opt/Moose/moose/templates/deals_sample.json')
     l = f.readlines()
