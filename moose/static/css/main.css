@@ -72,6 +72,10 @@ a:hover{
 	display: inline-block;
 }
 
+#headerTitle{
+	color: rgb(231,76,60);
+}
+
 #headerButtonsContainer{
 	width: 20%;
 	float: left;
@@ -102,7 +106,7 @@ a:hover{
 	border: none;
 }
 
-#id_password, #id_email, .signUpForm{
+#id_name, #id_password, #id_email, .signUpForm{
 	width: 200px;
 	height: 20px;
 	border: 2px solid gray;
@@ -163,11 +167,12 @@ a:hover{
 #howItWorks{
 	text-align:left;
 	position:relative;
-	background-color:rgb(51,51,51);
+	background-color:rgb(208,60,50);
 	color:white;
 	padding:5px;
 	width: 150px;
-	top:-28px;
+	left: 538px;
+	top:-72px;
 }
 
 #rightColumn{
@@ -268,10 +273,18 @@ a:hover{
 	display:inline;
 }
 
+#navbar li a{
+	text-decoration: underline;
+}
+
 .newItem{
 	background-color: rgb(114,88,146) !important;
 }
 
 .smallImage{
 	width: 20px !important;
+}
+
+.item a{
+	color: black;
 }
