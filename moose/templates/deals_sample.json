@@ -1,49 +1,21 @@
 {
 	"deals":[
-		{
-			"id": 4,
-			"image": "../static/images/tiles/deal_2b.jpg",
-			"link": "http://www.amazon.com",
-			"description": "there are four things that I think I need",
-			"favorite": true,
-			"new": false,
-			"store": "Macy's"
-		},
-		{
-			"id": 5,
-			"image": "../static/images/tiles/deal_2b.jpg",
-			"link": "http://www.amazon.com",
-			"description": "take an ID and, based on a direction",
-			"favorite": true,
-			"new": false,
-			"store": "Macy's"
-		},
-		{
-			"id": 6,
-			"image": "../static/images/tiles/deal_2b.jpg",
-			"link": "http://www.amazon.com",
-			"description": "return the deals older or newer than that id",
-			"favorite": false,
-			"new": false,
-			"store": "Macy's"
-		},
-		{
-			"id": 7,
-			"image": "../static/images/tiles/deal_2b.jpg",
-			"link": "http://www.amazon.com",
-			"description": "also I would like to specify the order, based on the IDs",
-			"favorite": false,
-			"new": true,
-			"store": "Amazon"
-		},
-		{
-			"id": 8,
-			"image": "../static/images/tiles/deal_2b.jpg",
-			"link": "http://www.amazon.com",
-			"description": "I think that's it for now",
-			"favorite": true,
-			"new": true,
-			"store": "Macy's"
-		}
-	]
+	{"description": "Girl, You Know It's Blue", "image": "http://us-cdn.justfab.com/media/email/newsletter/2013/9/BlueShades_Lifestyle.jpg", "favorite": true, "link": "http://e-mail.justfab.com/public/?q=ulink&fn=Link&ssid=28445&id=95d8w4rlamopvstd19o4888j3cfu0&id2=gdj6e6m83nj5tzlrnssfslgwbxjyk&subscriber_id=bymzasdeonegswoqedixljgkylcbbob&delivery_id=blsclsebsnrarihiftkechzxidkabfo&tid=3.bx0.CHIVNg.DH3I.UmJX..kdbQ.b..s.AUz7.b.Uji5pA.UjjTgQ.Y4kZDQ", "new": false, "id": "1", "store": "JustFab"},
+
+	{"description": "EXTRA 40% OFF Starts Now! Plus, Take $20 Off Jeans", "image": "http://media.guess.com/Guess/Emails/2013/November/11.08/G_Email_40OFFSale_9897_04b.jpg", "favorite": false, "link": "http://tracking1.guess.com/track?type=click&enid=ZWFzPTEmbXNpZD0xJmF1aWQ9Jm1haWxpbmdpZD0xMjkwMDEmbWVzc2FnZWlkPTc2ODA3JmRhdGFiYXNlaWQ9MzgwNiZzZXJpYWw9MTY4MDc1NTkmZW1haWxpZD1tdXJwaHl0aG9tYXNzb25AZ21haWwuY29tJnVzZXJpZD0xXzI5MjExJnRhcmdldGlkPSZmbD0mZXh0cmE9TXVsdGl2YXJpYXRlSWQ9JiYm&&&2005&&&http://shop.guess.com/en/Catalog/Browse/women/denim/?DCMP=EMC-129001&mid=EMC-129001&rid=129001.3806.29211", "new": false, "id": "3", "store": "guess.com"}, 
+	{"description": "Take 25% off or Join The A&F Club for 30% off! It ends tomorrow!", "image": "http://f.abercrombie-email.com/i/16/2089064817/20131105115502_ANF_110713_25__30_Club_US_02.jpg", "favorite": false, "link": "http://abercrombie-email.com/a/hBSf6aJB8hJlxB82VC4ABJLExYR/mainmsg?ET_RID=", "new": false, "id": "2", "store": "Abercrombie & Fitch"}, 
+	{"description": "The perfect peplum dress + Up\r\n to 70% OFF online & in-store", "image": "http://s7d9.scene7.com/is/image/bebe/20131108-email-us?$OriginalPixels$", "favorite": false, "link": "http://link.bebe.com/r/XBS3A5G/SUH8Y/RUN4R8/FUTK7/57TXP/3C/h?a=317646", "new": false, "id": "5", "store": "BeBe"}, 
+	{"description": "Affordable accent furniture, coffee table decor, French-inspired tableware, winter scarves & more", "image": "https://okl.scene7.com/is/image/OKL/SalesEvent_28428_Lifestyle_1?$medium$", "favorite": false, "link": "http://click.communications.onekingslane.com/?qs=2eaf7c48f913e497f39904477b7c218e6abe8a5bbc2c27c29324f783ba75055b64168bde82ecd824", "new": false, "id": "4", "store": "onekingslane"}, 
+	{"description": "20% off EVERYTHING in the Cough, Cold & Flu Department", "image": "http://f.e.drugstore.com/i/20/460988031/14wk08_ds_cough_cold_a1.gif", "favorite": false, "link": "http://e.drugstore.com/a/hBSZ7pRAbeh5-B816N0DmyqzP.AcGx3pao/shop?ap=14wk08dsCOUGHtRCr", "new": false, "id": "7", "store": "DrugStore"}, 
+	{"description": "Up to 70% OFF Warehouse Outlet.", "image": "http://img.wfrcdn.com/common/email/nov13/11012013_warehouse_03.jpg", "favorite": false, "link": "http://t1-members.allmodern.com/track?type=click&enid=ZWFzPTEmbXNpZD0xJmF1aWQ9Jm1haWxpbmdpZD0zNzI5MDImbWVzc2FnZWlkPTMzMDAmZGF0YWJhc2VpZD0yMzE4MDImc2VyaWFsPTE2ODAwODE3JmVtYWlsaWQ9bXlmYXR3aW5uaWVAZ21haWwuY29tJnVzZXJpZD0xNjgzNzUwNzYyJnRhcmdldGlkPSZmbD0mZXh0cmE9TXVsdGl2YXJpYXRlSWQ9JiYm&&&7001&&&http://www.allmodern.com/View-All-Sales-and-Clearance-C542068.html?refid=EDA1101136897.268&sm=1&csnid=572D26EC-C45D-468D-8F9D-A3CA2F934117", "new": false, "id": "6", "store": "All+Modern"}, 
+	{"description": "Fall Boot Sale ends tonight: save 20-40% on the latest styles!", "image": "http://epidm.edgesuite.net/Macys/adhoc/MCOM/102813_shoe_handbag_sale_email_MB.png", "favorite": true, "link": "http://email.macys.com/cgi-bin1/DM/t/hacp0NwU20W530BDdyD0EP&cm_em=myfatwinnie@gmail.com", "new": false, "id": "8", "store": "Macys"},
+	{"description": "Ends Soon. Up To 70% Off Snow Gear.", "image": "http://www.evo.com/promos/upload/2013-10-14_Sw_Email_PS.jpg", "favorite": false, "link": "http://links.evo.mkt4893.com/ctt?kn=14&ms=NDM3Njg3OTcS1&r=NjkwOTQ3MTcyOTUS1&b=0&j=MjA4MzU1MDAwS0&mt=1&rt=0", "new": true, "id": "9", "store": "voguejar"}, 
+	{"description": "_Shop_Spanx_on_eBay. up to 50%_off", "image": "http://pics.ebaystatic.com/aw/pics/myemails/A201310-1715460726621/images/Spanx.jpg", "favorite": false, "link": "http://rover.ebay.com/rover/4/0/8?eecl=1&eesi=US&i=18f76597e0bII530161II4039b3II18f6f620fb4II1&eepc=&bu=43294404509&segname=B0A20B5-00&crd=20131024212833&emParams=i&sojTags=emid%3Dbu%2Csegname%3Dsegname%2Ccrd%3Dcrd", "new": true, "id": "10", "store": "Ebay"}, 
+	{"description": "NEW SALES | Up to 30% off...", "image": "http://edm.westelm.com/we/2013/oct_launch4sales/2.jpg", "favorite": true, "link": "http://link.westelm.com/rts/go2.aspx?h=104234&tp=l-11-Q2P-1Pc-QSAD7-1n-1Iay1-1c-19fdco&x=3901729%7Cl-11-Q2P-1Pc-QSAD7-1n-1Iay1-1c-19fdco%7CEDM%7CPROMO%7C20131029_4Sales_eCat%7Cmyfatwinnie@gmail.com", "new": true, "id": "11", "store": "WestElm"}, 
+	{"description": "Starts NOW: Extra Discount On PACKABLES | 50% Off Everything!", "image": "https://responsys.hs.llnwd.net/i2/responsysimages/coach/20131029_Factory_Online_Emails/20131030_Kickoff/20131030_Kickoff_MAIN.jpg", "favorite": false, "link": "https://e.coach.com/pub/cc?_ri_=X0Gzc2X%3DWQpglLjHJlTQGnrLJXmzeM9PnJ28BEzefPrqrAji9cCpfWzcRVXtpKX%3DSSURYT&_ei_=EolaGGF4SNMvxFF7KucKuWPYCbbspaDKKMXf31zx7JLFcZE70h_efp8JterBX9DJYOpGWO2okuXHW9lpweWYW-TeBTiwDN8uzGKDbxRCIPT1Dscd0L6RvzbzeW9pa1fhN8bWpiSSc2_6h43IDOlQu3yTELjf-tGiRx99fHZFt82c7DF1vw.", "new": true, "id": "12", "store": "Coach"},
+	{"description": "Dress Obsess: Sweater Weather | Extra 20% Off Shoes", "image": "http://f.e.bloomingdales.com/i/32/392907741/103013_YES_DressObsess_01.jpg", "favorite": true, "link": "http://e.bloomingdales.com/a/hBScQitAXa0vdB82HdoDg9BqF.B7uDE98v/shopnow#!fn=DRESS_STYLE_M%3DSweater%26sortBy%3DORIGINAL%26productsPerPage%3D96&cm_mmc=EML-_-FOB-_-YES_103013_DressObsess-_-ShopNow?USR_PRF_ID=3774093957", "new": true, "id": "13", "store": "Bloomingdales"},  
+	{"description": "Grab a seat: 15% off dining furniture + Free furniture delivery.", "image": "http://f.chtah.com/i/4/471572645/102613-cb-big-sur_02.jpg", "favorite": false, "link": "http://news.crateandbarrel.com/a/hBSa8rjAcG6ClB82CmYNtQ$yzaY/crt15a-4?email=jack@voguejar.com", "new": true, "id": "14", "store": "Crate & Barrel"},
+	{"description": "All dolled up: FREE Glamour Tote", "image": "http://f.e.victoriassecret.com/i/10/477251442/102813_VSS_GT_07.jpg", "favorite": false, "link": "http://e.victoriassecret.com/a/hBScPUYAcckdyB82FZdDowbgKj6/v15?EMAIL=myfatwinnie@gmail.com&EMAIL_NBR=76835498&d_cellid=10301354", "new": true, "id": "15", "store": "Silkies"},
+	{"description": "Things We Love about Fall", "image": "https://responsys.hs.llnwd.net/i5/responsysimages/nordstrom/contentlibrary/fls/2013/10/25/20131025_multi_falls_best/20131025_Multi_Falls_Best/images/hero4b_1.jpg", "favorite": false, "link": "https://em.nordstrom.com/pub/cc?_ri_=X0Gzc2X%3DWQpglLjHJlYQGudhOzfUu1zazgkNs4rhIzfzgzfS5vGoWfv1sfcfVXtpKX%3DATURYY&_ei_=EgpUB9QAx3UXswNCpNk828R6p-a7mKRSrfjHw26w9u2LP1G3y1ruwOp-gSWJp3SpZ8hdyLRfv2VFGHAs2B4KlvIW1gTpoSlPGr1HACVs5_uF-AKz6pT8XRzsAS3YkLeKikn10TsDsjrOXG3WO8Fag6EqgNk8nDu_3vcz_eOnOaw9tmVe7QkhX04eh0OgbNukkFaO290TxT7Y35lWfA-RQ8Y1pfblYhOPHix9OrsYeynOPJo3-yFZrVi9Aw.", "new": true, "id": "16", "store": "Nordstrom"}
+]
 }
