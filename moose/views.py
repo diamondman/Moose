@@ -12,9 +12,18 @@ import string,math
 import re
 
 def _isValidLogin(request):
+    import ipdb
+    ipdb.set_trace()
     password = request.POST.get('password', '')
-    email = request.POST.get('email', '')
-    user = auth.authenticate(email=email, password=password)
+    username = request.POST.get('name', '')
+    user = auth.authenticate(username=username, password=password)
+
+    #Don't try this at home... or anywhere
+    #import ipdb
+    #ipdb.set_trace()
+    #request.session['email'] = form.email
+    #request.session['password'] = request.GET['password']
+
     if user is not None and user.is_active:
         return True
     else:
@@ -42,6 +51,12 @@ def newUser(request):
             password = request.POST.get('password', '')
             user = User.objects.create_user(username=username,email=email,password=password)
             user.save()
+            #Don't try this at home... or anywhere
+            #import ipdb
+            #ipdb.set_trace()
+            request.session['email'] = email
+            request.session['password'] = password
+
             return HttpResponseRedirect("get_deals")
     else:
         form = NewUserForm()
@@ -60,3 +75,11 @@ def set_favorite(request, id, value):
     fav = Favorite(email=id, isFavorite=(True if value.lower() == 'true' else False))
     fav.save()
     return HttpResponse(s(str(email))
+
+def get_deals_json(request, *args, **kwargs):
+    
+    f = open(settings.BASE_DIR+'/moose/templates/deals_sample.json')
+    l = f.readlines()
+    f.close()
+    return HttpResponse(request.session.email, mimetype='application/json', status=200)
+        #"".join(l), mimetype='application/json', status=200)
