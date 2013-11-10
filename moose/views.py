@@ -10,7 +10,6 @@ from moose.forms import *
 from django.db import connection, transaction
 import string,math
 import re
-from django.conf import settings
 
 def _isValidLogin(request):
     password = request.POST.get('password', '')
@@ -52,8 +51,10 @@ def favorites(request):
 def deals(request):
     return render_to_response("deals.html", {})
 
-def get_deals_json(request, *args, **kwargs):
-    f = open(settings.BASE_DIR+'/moose/templates/deals_sample.json')
-    l = f.readlines()
-    f.close()
-    return HttpResponse("".join(l), mimetype='application/json', status=200)
+def fav_json(request):
+    return render_to_response("../static/fav.json", {})
+
+def set_favorite(request, id, value):
+    fav = Favorite(email=id, isFavorite=(True if value.lower() == 'true' else False))
+    fav.save()
+    return HttpResponse(s(str(email))
