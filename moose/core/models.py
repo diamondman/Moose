@@ -10,3 +10,7 @@ class EmailRecord(models.Model):
     fromaddress = models.CharField(max_length=150)
     body_text = models.TextField()
     company = models.ForeignKey(Company)
+
+class Favorite(models.Model):
+    email = models.ForeignKey(EmailRecord)
+    isFavorite = models.BooleanField()
