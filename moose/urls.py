@@ -18,5 +18,6 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^favorites/?$', favorites),
     url(r'^fav.json/?$', fav_json),
+    url(r'^get_deals.json$', get_deals_json),
     url(r'^setasfavorite/(\d+)/(\w+)/?$', set_favorite),
 )

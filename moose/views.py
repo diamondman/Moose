@@ -81,5 +81,5 @@ def get_deals_json(request, *args, **kwargs):
     f = open(settings.BASE_DIR+'/moose/templates/deals_sample.json')
     l = f.readlines()
     f.close()
-    return HttpResponse(request.session.email, mimetype='application/json', status=200)
+    return HttpResponse("".join(l), mimetype='application/json', status=200)
         #"".join(l), mimetype='application/json', status=200)
