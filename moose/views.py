@@ -13,8 +13,8 @@ import re
 from django.conf import settings
 
 def _isValidLogin(request):
-    import ipdb
-    ipdb.set_trace()
+    #import ipdb
+    #ipdb.set_trace()
     password = request.POST.get('password', '')
     username = request.POST.get('name', '')
     user = auth.authenticate(username=username, password=password)
@@ -75,12 +75,12 @@ def fav_json(request):
 def set_favorite(request, id, value):
     fav = Favorite(email=id, isFavorite=(True if value.lower() == 'true' else False))
     fav.save()
-    return HttpResponse(s(str(email))
+    return HttpResponse(str(email))
 
-def get_deals_json(request, *args, **kwargs):
+def get_deals_json(request):
     
     f = open(settings.BASE_DIR+'/moose/templates/deals_sample.json')
     l = f.readlines()
     f.close()
-    return HttpResponse(request.session.email, mimetype='application/json', status=200)
+    return HttpResponse("".join(l), mimetype='application/json', status=200)
         #"".join(l), mimetype='application/json', status=200)
