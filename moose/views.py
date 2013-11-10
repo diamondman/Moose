@@ -67,6 +67,9 @@ def newUser(request):
 def favorites(request):
     return render_to_response("favorites.html", {})
 
+def demo(request):
+    return render_to_response("demo.html", {})
+
 def deals(request):
     return render_to_response("deals.html", {})
 
