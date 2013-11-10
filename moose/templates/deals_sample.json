@@ -5,14 +5,14 @@
 			"image": "../images/dealTest.png",
 			"description": "there are four things that I think I need",
 			"favorite": true,
-			"new": false
+			"new": true
 		},
 		{
 			"id": 5,
 			"image": "../images/dealTest.png",
 			"description": "take an ID and, based on a direction",
 			"favorite": true,
-			"new": false
+			"new": true
 		},
 		{
 			"id": 6,

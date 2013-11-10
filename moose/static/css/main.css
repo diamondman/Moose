@@ -268,3 +268,7 @@ a:hover{
 #navbar li{
 	display:inline;
 }
+
+.newItem{
+	background-color: green !important;
+}
