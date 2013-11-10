@@ -93,7 +93,7 @@ function insertDeal(destinationBox,deal,position) {
 				DIV({'class':'descriptionBox'}, deal.description),
 				DIV(
 					DIV({'class':'shareBox', 'id': 'deal'+deal.id}, 'Share'),
-					DIV({'class':'imageBox'}, A({'href':"javascript:flagFavorite("+deal.id+",'"+nextFavTrigger+"');"},IMG({'src':deal.favorite?'../static/images/heart_red.png':'../static/images/heart_gray.png'}))),
+					DIV({'class':'imageBox'}, A({'id':'favoriteDeal'+deal.id,'href':"javascript:flagFavorite("+deal.id+",'"+nextFavTrigger+"');"},IMG({'src':deal.favorite?'../static/images/heart_red.png':'../static/images/heart_gray.png'}))),
 					DIV({'class':'clear'})
 				)
 			);
@@ -117,7 +117,12 @@ function insertDeal(destinationBox,deal,position) {
 	'html':true,
 	'trigger':'hover',
 	'content': function(){
-		return "<a href='http://www.facebook.com/sharer/sharer.php?s=100&p[url]=www.moose.com&p[title]=Great%20deal%20found%20thanks%20to%20Moose.com&p[summary]="+ escape(deal.description) +"'><img class='smallImage' src='../static/images/facebook.png'></a><br /><a href='http://twitter.com/home?status=Moose%20is%20my%20favorite%20tool%20to%20organize%20my%20inbox%20shopping%20deals: "+ escape(deal.description) +"'><img class='smallImage' src='../static/images/twitter.png'></a><br /><a><img class='smallImage' src='../static/images/envelope.png'></a>";
+		var formattedBody = "Moose is my favorite tool to organize shopping deals from my email inbox.\n I discovered " + escape(deal.description) + " thanks to it!";
+		var mailToLink = "mailto:?subject=I%20would%20like%20to%20invite%20you%20to%20join%20Moose.com&body=" + formattedBody;
+	
+	
+	
+		return "<a target='_blank' href='http://www.facebook.com/sharer/sharer.php?s=100&p[url]=www.moose.com&p[title]=Great%20deal%20found%20thanks%20to%20Moose.com&p[summary]="+ escape(deal.description) +"'><img class='smallImage' src='../static/images/facebook.png'></a><br /><a target='_blank' href='http://twitter.com/home?status=Moose%20is%20my%20favorite%20tool%20to%20organize%20my%20inbox%20shopping%20deals: "+ escape(deal.description) +"'><img class='smallImage' src='../static/images/twitter.png'></a><br /><a href='"+mailToLink+"'><img class='smallImage' src='../static/images/envelope.png'></a>";
 	}
 });
 
@@ -143,4 +148,50 @@ function filterDeals(){
 			console.log("ok");
 		}
 	}) 
+}
+
+
+
+
+
+
+
+
+function flagFavorite(dealid,toStatus){
+	$("#favoriteDeal"+dealid).removeAttr('href');
+
+	queryURL = "../setasfavorite/"+dealid+"/"+toStatus;
+
+	$.getJSON(queryURL, function(data) {
+		if (data.status==true) {
+			if (toStatus==true) {
+				$("#favoriteDeal"+dealid).attr("href","javascript:flagFavorite("+dealid+",'false');");
+				$("#favoriteDeal"+dealid).text("Unfavorite");
+			}else {
+				$("#favoriteDeal"+dealid).attr("href","javascript:flagFavorite("+dealid+",'true');");
+				$("#favoriteDeal"+dealid).text("Favorite");
+			}
+			
+			// metti l'href nuovo
+			// cambia testo in Unfavorite
+		}else {
+			if (toStatus==true) {
+				$("#favoriteDeal"+dealid).attr("href","javascript:flagFavorite("+dealid+",'true');");
+			}else {
+				$("#favoriteDeal"+dealid).attr("href","javascript:flagFavorite("+dealid+",'false');");
+			}
+			
+			// rimetti l'href vecchio
+		}
+	}).error(function(xhr, ajaxOptions, thrownError) {
+		console.log(xhr.responseText);
+		if (toStatus=='Y') {
+			$("#favoriteDeal"+dealid).attr("href","javascript:flagFavorite("+dealid+",'true');");
+		}else {
+			$("#favoriteDeal"+dealid).attr("href","javascript:flagFavorite("+dealid+",'false');");
+		}
+		// rimetti l'href vecchio
+	}).complete(function() {
+		
+	});
 }

@@ -221,7 +221,7 @@ a:hover{
   margin-bottom: 10px;
   padding-top: 5px;
   float: left;
-  background: #D26;
+  background: rgb(191,191,191);
   border: 2px solid #333;
   border-color: hsla(0, 0%, 0%, 0.5);
   border-radius: 5px;
@@ -269,7 +269,7 @@ a:hover{
 }
 
 .newItem{
-	background-color: green !important;
+	background-color: rgb(114,88,146) !important;
 }
 
 .smallImage{
