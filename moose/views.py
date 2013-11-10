@@ -74,9 +74,9 @@ def fav_json(request):
 def set_favorite(request, id, value):
     fav = Favorite(email=id, isFavorite=(True if value.lower() == 'true' else False))
     fav.save()
-    return HttpResponse(s(str(email))
+    return HttpResponse(str(email))
 
-def get_deals_json(request, *args, **kwargs):
+def get_deals_json(request):
     
     f = open(settings.BASE_DIR+'/moose/templates/deals_sample.json')
     l = f.readlines()
