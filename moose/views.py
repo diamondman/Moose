@@ -21,6 +21,8 @@ def _isValidLogin(request):
         return False
 
 def login(request):
+    #import ipdb
+    #ipdb.set_trace()
     if request.method == 'POST':
         form = LoginForm(request.POST)
         if form.is_valid():
