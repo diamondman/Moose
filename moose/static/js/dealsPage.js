@@ -99,16 +99,8 @@ function insertDeal(destinationBox,deal,position) {
 			);
 	}
 	
-$('#deal'+deal.id).popover({
-	'html':true,
-	'trigger':'click',
-	'title':'test',
-	'content': function(){
-		return "<a><img src='../static/images/twitter.png'></a><br /><a><img src='../static/images/facebook.png'></a><br /><a><img src='../static/images/envelope.png'></a>";
-	}
-});
 					  	
-	insertedDeals[insertedDeals.length] = deal;
+	//insertedDeals[insertedDeals.length] = deal;
 	//elementToAdd.style.display="none";
 	
 	if (position=='bottom') {
@@ -121,11 +113,18 @@ $('#deal'+deal.id).popover({
 		
 	}
 	
-	var dealContent = deal.text;
+	$('#deal'+deal.id).popover({
+	'html':true,
+	'trigger':'hover',
+	'content': function(){
+		return "<a href='http://www.facebook.com/sharer/sharer.php?s=100&p[url]=www.moose.com&p[title]=Great%20deal%20found%20thanks%20to%20Moose.com&p[summary]="+ escape(deal.description) +"'><img class='smallImage' src='../static/images/facebook.png'></a><br /><a href='http://twitter.com/home?status=Moose%20is%20my%20favorite%20tool%20to%20organize%20my%20inbox%20shopping%20deals: "+ escape(deal.description) +"'><img class='smallImage' src='../static/images/twitter.png'></a><br /><a><img class='smallImage' src='../static/images/envelope.png'></a>";
+	}
+});
+
 	
-	$('#deal'+deal.id+" .rowContent .rowText").html(dealContent);
+	//$('#deal'+deal.id+" .rowContent .rowText").html(dealContent);
 	
-	$("#deal"+deal.id).fadeIn('slow');
+	//$("#deal"+deal.id).fadeIn('slow');
 }
 
 
