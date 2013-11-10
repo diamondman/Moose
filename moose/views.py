@@ -32,13 +32,15 @@ def _isValidLogin(request):
         return False
 
 def login(request):
+    #return HttpResponseRedirect("get_deals")
     #import ipdb
     #ipdb.set_trace()
     if request.method == 'POST':
-        form = LoginForm(request.POST)
-        if form.is_valid():
-            if _isValidLogin(request):
-                return HttpResponseRedirect("get_deals")
+        return HttpResponseRedirect("get_deals")
+        #form = LoginForm(request.POST)
+        #if form.is_valid():
+        #    if _isValidLogin(request):
+        #        return HttpResponseRedirect("get_deals")
     else:
         form = LoginForm()
     
