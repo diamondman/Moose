@@ -36,6 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'moose.core'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -60,10 +61,17 @@ TEMPLATE_DIRS = (
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'PORT': 5432,
+        'USER': 'catch22',
+        'PASSWORD': 'That is some catch',
+        'NAME': 'catch22',
+        'HOST': 'localhost',
+        'OPTIONS': {
+            'autocommit': True
+            }
+        }
     }
-}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
