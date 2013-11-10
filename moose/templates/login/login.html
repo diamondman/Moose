@@ -3,21 +3,25 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Moose</title>
-		<link rel="stylesheet" href="static/css/reset.css" type="text/css" media="screen" charset="utf-8" />
-		<link rel="stylesheet" href="static/css/main.css" type="text/css" media="screen" charset="utf-8" />
-		<script src="static/js/masonry.pkgd.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="../static/css/bootstrap.css" type="text/css" media="screen" charset="utf-8" />
+		<link rel="stylesheet" href="../static/css/main.css" type="text/css" media="screen" charset="utf-8" />
+		<script src="../static/js/jquery-2.0.3.js" type="text/javascript"></script>
+		<script src="../static/js/masonry.pkgd.js" type="text/javascript"></script>
+		<script src="../static/js/DOMBuilder.min.js" type="text/javascript"></script>
+		<script src="../static/js/bootstrap.js" type="text/javascript"></script>
 	</head>
 	<body>
 		<div id="container">
-            <div id="header" class="main">
+            <div id="headerWithNavbar" class="main">
             	<div id="headerImage" class="rightAlign">
-            		<img src="static/images/logo.jpg" />
+            		<img src="../static/images/logo.jpg" />
             	</div>
             	<div id="headerText">
-            		Moose.com
+            		<div id="headerTitle">Moose</div>
             	</div>
-            	<div id="headerButtonsContainer" class="leftAlign">
-            			<button name="login" value="Log in" class="logInButton">Log in</button>
+            	<div class="clear"></div>
+            	<div id="headerButtonsContainer2" class="rightAlign">
+            			<button name="login" value="Log in" class="logInButton">Log in</button> <button name="login" value="Sign up" class="logInButton" style="margin-right:100px;">Sign up</button>
             	</div>
             </div>
             <div id="content" class="main">
