@@ -5,7 +5,7 @@ from django.views.decorators.cache import cache_page #CACHE imports
 #from vBVS.FrontEnd.models import Run,Resource,Runplan,Buildsready
 #from vBVS.FrontEnd.models import Baselineinfo,User,Notification,Notificationlist
 from django.shortcuts import render_to_response
-#from Moose.moose.forms import *
+from moose.forms import *
 from django.db import connection, transaction
 import string,math
 import re
@@ -15,7 +15,7 @@ def _isValidEmail(request):
 
 def login(request):
     if request.method == 'POST':
-        form = BaselineinfoForm(request.POST)
+        form = LoginForm(request.POST)
         if form.is_valid():
             if _isValidEmail(request):
                 return HttpResponseRedirect("deals/deals.html")

@@ -1,7 +1,7 @@
 import re
-import models #not necessary
+#import models #not necessary
 from django.core.exceptions import ObjectDoesNotExist
-from vBVS.FrontEnd.models import *
+#from Moose.moose.models import *
 #from vBVS.FrontEnd.models import Resource,Runplan,Run,User,Buildsready,Baselineinfo, Notification, Notificationlist
 from django import forms
 from django.db import models
