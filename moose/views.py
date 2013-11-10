@@ -56,8 +56,8 @@ def newUser(request):
             #Don't try this at home... or anywhere
             #import ipdb
             #ipdb.set_trace()
-            request.session['email'] = email
-            request.session['password'] = password
+            #request.session['email'] = email
+            #request.session['password'] = password
 
             return HttpResponseRedirect("get_deals")
     else:
