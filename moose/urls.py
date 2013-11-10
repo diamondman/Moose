@@ -20,4 +20,5 @@ urlpatterns = patterns('',
     url(r'^fav.json/?$', fav_json),
     url(r'^get_deals.json$', get_deals_json),
     url(r'^setasfavorite/(\d+)/(\w+)/?$', set_favorite),
+    url(r'^getasfavorite/(\d+)/?$', get_favorite),
 )

@@ -7,6 +7,7 @@ from django.contrib.sessions.models import Session
 from django.contrib import auth
 from django.contrib.auth.models import User
 from moose.forms import *
+from moose.core.models import *
 from django.db import connection, transaction
 import string,math
 import re
@@ -76,6 +77,14 @@ def set_favorite(request, id, value):
     fav = Favorite(email=id, isFavorite=(True if value.lower() == 'true' else False))
     fav.save()
     return HttpResponse(str(email))
+
+def get_favorite(request, id):
+    try:
+        fav = Favorite.objects.get(id=id)
+    except:
+        return HttpResponse('False')
+    else:
+        return HttpResponse(str(fav.isFavorite).lower())
 
 def get_deals_json(request):
     
