@@ -50,3 +50,9 @@ def favorites(request):
 
 def deals(request):
     return render_to_response("deals.html", {})
+
+def get_deals_json(request, *args, **kwargs):
+    f = open('/opt/Moose/moose/templates/deals_sample.json')
+    l = f.readlines()
+    f.close()
+    return HttpResponse("".join(l), mimetype='application/json', status=200)
