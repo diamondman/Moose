@@ -4,7 +4,10 @@ var insertedDeals = new Array();;
 
 $(document).ready(function() {
 	loadInsertDeals("dealsBox",undefined,undefined);
-
+	
+	$("#dealSearch").change(function(){
+		filterDeals();
+	});
 });
 
 
@@ -62,7 +65,7 @@ function loadInsertDeals(destinationBox,idStart, direction){
 		if (direction!='past') {
 			setTimeout(function() {
 				loadInsertDeals(destinationBox,nextDealID, direction);
-			}, 10000);
+			}, 10000*10000);
 		}
 	});
 
@@ -98,10 +101,10 @@ function insertDeal(destinationBox,deal,position) {
 	
 $('#deal'+deal.id).popover({
 	'html':true,
-	'trigger':'hover',
+	'trigger':'click',
 	'title':'test',
 	'content': function(){
-		return "<button>twitter</button><br /><button>facebook</button><br /><button>email</button>";
+		return "<a><img src='../static/images/twitter.png'></a><br /><a><img src='../static/images/facebook.png'></a><br /><a><img src='../static/images/envelope.png'></a>";
 	}
 });
 					  	
@@ -128,4 +131,17 @@ $('#deal'+deal.id).popover({
 
 function loadPastTweets() {
 	loadInsertTweets("dealsBox",nextOldDealID,'past');
+}
+
+function filterDeals(){
+	var string = $("#dealSearch").val();
+	insertedDeals.forEach(function(item, index){
+		if((item.description.indexOf(string) == -1) && (item.store.indexOf(string) == -1)){
+			var toRemove = new Array();
+			toRemove.push($("#deal"+item.id));
+			$("#dealsBox").masonry( 'hide', toRemove);	
+		} else{
+			console.log("ok");
+		}
+	}) 
 }
