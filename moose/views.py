@@ -10,6 +10,7 @@ from moose.forms import *
 from django.db import connection, transaction
 import string,math
 import re
+from django.conf import settings
 
 def _isValidLogin(request):
     import ipdb
