@@ -12,8 +12,8 @@ import string,math
 import re
 
 def _isValidLogin(request):
-    import ipdb
-    ipdb.set_trace()
+    #import ipdb
+    #ipdb.set_trace()
     password = request.POST.get('password', '')
     username = request.POST.get('name', '')
     user = auth.authenticate(username=username, password=password)
