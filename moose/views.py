@@ -76,7 +76,7 @@ def fav_json(request):
 def set_favorite(request, id, value):
     fav = Favorite(email=id, isFavorite=(True if value.lower() == 'true' else False))
     fav.save()
-    return HttpResponse(str(email))
+    return HttpResponse(str(id))
 
 def get_favorite(request, id):
     try:

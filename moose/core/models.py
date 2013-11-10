@@ -12,5 +12,5 @@ class EmailRecord(models.Model):
     company = models.ForeignKey(Company)
 
 class Favorite(models.Model):
-    email = models.ForeignKey(EmailRecord)
+    email = models.IntegerField()
     isFavorite = models.BooleanField()
