@@ -1,0 +1,22 @@
+{
+  "nodes":[
+    {"company":"Macy's","numberDeals":10},
+    {"company":"ebay","numberDeals":3},
+    {"company":"Gap","numberDeals":12},
+    {"company":"Amazon","numberDeals":35},
+    {"company":"Apple","numberDeals":2},
+    {"company":"Cannon","numberDeals":4},
+    {"company":"Yahoo","numberDeals":3},
+    {"company":"IKEA","numberDeals":11},
+  ],
+  "links":[
+    {"source":1,"target":0,"value":1},
+    {"source":2,"target":0,"value":8},
+    {"source":1,"target":0,"value":1},
+    {"source":2,"target":0,"value":8},
+    {"source":1,"target":0,"value":1},
+    {"source":2,"target":0,"value":8},
+    {"source":1,"target":0,"value":1},
+    {"source":2,"target":0,"value":8},
+
+  ]}

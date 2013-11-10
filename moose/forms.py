@@ -15,5 +15,10 @@ class LoginForm(forms.Form):
     email = forms.EmailField(required=True)
     password = forms.CharField( widget=forms.PasswordInput(render_value=True), required=True )
     
+class NewUserForm(forms.Form):
+    name = forms.CharField(required=True)
+    email = forms.EmailField(required=True)
+    password = forms.CharField( widget=forms.PasswordInput(render_value=True), required=True )
+    repassword = forms.CharField( widget=forms.PasswordInput(render_value=True), required=True )
 
 
