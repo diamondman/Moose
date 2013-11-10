@@ -1,5 +1,6 @@
 var nextDealID = undefined;
 var nextOldDealID = undefined;
+var insertedDeals = new Array();;
 
 $(document).ready(function() {
 	loadInsertDeals("dealsBox",undefined,undefined);
@@ -11,7 +12,7 @@ $(document).ready(function() {
 function loadInsertDeals(destinationBox,idStart, direction){
 	var queryURL;
 
-	queryURL = "http://ubu1/get_deals";
+	queryURL = "http://ec2-54-227-196-235.compute-1.amazonaws.com/get_deals";
 	var testoHeading="";
 	
 	if (nextDealID != undefined) {
@@ -61,7 +62,7 @@ function loadInsertDeals(destinationBox,idStart, direction){
 		if (direction!='past') {
 			setTimeout(function() {
 				loadInsertDeals(destinationBox,nextDealID, direction);
-			}, 500000);
+			}, 10000);
 		}
 	});
 
@@ -76,7 +77,7 @@ function insertDeal(destinationBox,deal,position) {
 	var nextFavTrigger = true;
 	var nextFavText = 'Favorite';
 	if (deal.favorite!=undefined) {
-		if (deal.dealID==true) {
+		if (deal.favorite==true) {
 			nextFavTrigger = false;
 			nextFavText = 'Unfavorite';
 		}
@@ -104,14 +105,17 @@ $('#deal'+deal.id).popover({
 	}
 });
 					  	
-	
+	insertedDeals[insertedDeals.length] = deal;
 	//elementToAdd.style.display="none";
 	
 	if (position=='bottom') {
 		$("#"+destinationBox).append(elementToAdd);
+		$('#dealsBox').masonry( 'appended', elementToAdd );
 		alert("should get the PENULTIMATE CHILD, the last one is the clear!");
 	}else {
 		$("#"+destinationBox).prepend(elementToAdd);
+		$('#dealsBox').masonry( 'appended', elementToAdd );
+		
 	}
 	
 	var dealContent = deal.text;
