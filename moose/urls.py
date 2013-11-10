@@ -14,6 +14,6 @@ urlpatterns = patterns('',
     url(r'^$',login),
     url(r'^login/?$', login),
     url(r'test', 'moose.views.test1'),
-    url(r'^get_deals', 'moose.views.get_deals'),
+    url(r'^get_deals', deals),
     url(r'^admin/', include(admin.site.urls)),
 )

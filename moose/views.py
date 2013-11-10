@@ -18,7 +18,7 @@ def login(request):
         form = LoginForm(request.POST)
         if form.is_valid():
             if _isValidEmail(request):
-                return HttpResponseRedirect("deals.html")
+                return HttpResponseRedirect("get_deals")
     else:
         form = LoginForm()
     
@@ -38,8 +38,5 @@ def home(request, *args, **kwargs):
                             (args, kwargs, type(request.session))
                         , status=200)
 
-def get_deals(request):
-    f = open('/opt/Moose/moose/templates/deals_sample.json')
-    l = f.readlines()
-    f.close()
-    return HttpResponse("".join(l), mimetype='application/json', status=200)
+def deals(request):
+    return render_to_response("deals.html", {})

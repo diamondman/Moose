@@ -11,7 +11,7 @@ $(document).ready(function() {
 function loadInsertDeals(destinationBox,idStart, direction){
 	var queryURL;
 
-	queryURL = "http://ec2-54-227-196-235.compute-1.amazonaws.com/get_deals";
+	queryURL = "http://ubu1/get_deals";
 	var testoHeading="";
 	
 	if (nextDealID != undefined) {
