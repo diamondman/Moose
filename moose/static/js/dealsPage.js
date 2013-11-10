@@ -12,8 +12,7 @@ $(document).ready(function() {
 function loadInsertDeals(destinationBox,idStart, direction){
 	var queryURL;
 
-	queryURL = "http://ec2-54-227-196-235.compute-1.amazonaws.com/get_deals.json";
-	//queryURL = "http://localhost:8000/get_deals.json";
+	queryURL = "../get_deals.json";
 	var testoHeading="";
 	
 	if (nextDealID != undefined) {
