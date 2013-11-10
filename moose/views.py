@@ -18,7 +18,7 @@ def login(request):
         form = LoginForm(request.POST)
         if form.is_valid():
             if _isValidEmail(request):
-                return HttpResponseRedirect("deals/deals.html")
+                return HttpResponseRedirect("deals.html")
     else:
         form = LoginForm()
     
