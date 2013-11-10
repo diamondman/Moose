@@ -28,7 +28,7 @@
             	<div id="leftColumn">
             		<div id="formContent">
             			<h3>Free to signup using:</h3>
-            			<div id="logos">form.
+            			<div id="logos">
             				<img src="static/images/gmail.png" />
             				<img src="static/images/yahoo.png" />
             				<img src="static/images/outlook_logo.png" />
@@ -36,10 +36,10 @@
             			<h3>or</h3>
 	            		<form name="signup" id="signUpForm" method="post" action="login">
 					{% if form.errors %}
-						<font color="red"><p>Please correct errors loging in</p></font>
+						<font color="red"><p>Please correct errors logging in</p></font>
 					{% endif%}
 					{% if form.errors.email %}
-						<font color="red">enter valis email</font>
+						<font color="red">enter valid email</font>
 					{% endif%}
 					{{form.email}}<br>
 					{% if form.errors.password %}
