@@ -2,7 +2,7 @@
 	"deals":[
 		{
 			"id": 4,
-			"image": "../images/dealTest.png",
+			"image": "../static/images/tiles/deal_2b.jpg",
 			"description": "there are four things that I think I need",
 			"favorite": true,
 			"new": true,
@@ -10,7 +10,7 @@
 		},
 		{
 			"id": 5,
-			"image": "../images/dealTest.png",
+			"image": "../static/images/tiles/deal_2b.jpg",
 			"description": "take an ID and, based on a direction",
 			"favorite": true,
 			"new": true,
@@ -18,7 +18,7 @@
 		},
 		{
 			"id": 6,
-			"image": "../images/dealTest.png",
+			"image": "../static/images/tiles/deal_2b.jpg",
 			"description": "return the deals older or newer than that id",
 			"favorite": false,
 			"new": false,
@@ -26,7 +26,7 @@
 		},
 		{
 			"id": 7,
-			"image": "../images/dealTest.png",
+			"image": "../static/images/tiles/deal_2b.jpg",
 			"description": "also I would like to specify the order, based on the IDs",
 			"favorite": false,
 			"new": false,
@@ -34,7 +34,7 @@
 		},
 		{
 			"id": 8,
-			"image": "../images/dealTest.png",
+			"image": "../static/images/tiles/deal_2b.jpg",
 			"description": "I think that's it for now",
 			"favorite": true,
 			"new": false,
